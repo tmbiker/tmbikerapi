@@ -7,7 +7,7 @@ async function bootstrap() {
   app.setGlobalPrefix('tmbikerapi');
   const configService = app.get(ConfigService);
   const port = configService.getOrThrow('PORT');
-  await app.listen(3000);
+  await app.listen(port);
 }
 
 bootstrap();
