@@ -1,6 +1,9 @@
 import { IsNotEmpty, IsNumber, IsOptional } from "class-validator";
+import { PrimaryGeneratedColumn } from 'typeorm';
 
 export class NuevoCorredoresDto {
+    @PrimaryGeneratedColumn('increment')
+    idregistro: number;
     @IsOptional()
     idcorredor: number    
     @IsNumber()

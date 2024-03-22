@@ -4,7 +4,6 @@ import { Repository } from 'typeorm';
 import { NuevoCorredoresDto }  from './dto/nuevocorredores.dto';
 import { Corredores } from './corredores.entity';
 
-
 @Injectable()
 export class CorredoresService {
 
